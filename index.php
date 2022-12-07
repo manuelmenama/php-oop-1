@@ -1,5 +1,5 @@
 <?php
-  require_once './class/Movie.php';
+  require_once './Models/Movie.php';
   $non_si_sevizia_un_paperino = new Movie("Non Si Sevizia Un Paperino", "102 minuti", "1972", "Lucio Fulci",["giallo","thriller"]);
   $milano_odia = new Movie("Milano Odia: La Polizia Non Può Sparare","100 minuti","1974","Umberto Lenzi",["noir", "poliziesco", "thriller"]);
   $macabro = new Movie("Macabro","89 minuti","1980","Lamberto Bava",["horror"]);
@@ -27,13 +27,13 @@
 
     <div class="wrapper">
       <?php foreach($movieList as $movie): ?>
-      <div class="card debug">
+      <div class="card">
         <img src="<?php echo $movie->poster ?>" alt="<?php echo $movie->title ?>">
         <ul>
-          <li><?php echo $movie->title ?></li>
-          <li><?php echo $movie->duration ?></li>
-          <li><?php echo $movie->year ?></li>
-          <li><?php echo $movie->direction ?></li>
+          <li>Titolo: <?php echo $movie->title ?></li>
+          <li>Durata: <?php echo $movie->duration ?></li>
+          <li>Anno: <?php echo $movie->year ?></li>
+          <li>Regia: <?php echo $movie->direction ?></li>
           <li>Genere: 
             <ul>
               <?php foreach($movie->genre as $genre): ?>
