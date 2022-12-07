@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.debug{
+  background-color: rgba(95, 158, 160, 0.288);
+  border: 1px solid black;
+}
+
+.container{
+  width: 70%;
+  margin: 100px auto;
+}
+
+h1{
+  margin-bottom: 3rem;
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.card{
+  width: calc(100% / 3 - 2rem);
+  display: flex;
+  margin: 1rem;
+}
+
+.card img{
+  max-width: 50%;
+}
+
+.card ul{
+  margin-left: 2rem;
+}
