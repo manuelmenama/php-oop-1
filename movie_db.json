@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Non Si Sevizia Un Paperino",
+        "duration": "102 minuti",
+        "year": "1972",
+        "direction": "Lucio Fulci",
+        "genre": [
+            "giallo",
+            "thriller"
+        ],
+        "poster": "https:\/\/bmoviezone.files.wordpress.com\/2011\/01\/nonsiseviziaunpaperino.jpg"
+    },
+    {
+        "title": "Milano Odia: La Polizia Non Pu\u00f2 Sparare",
+        "duration": "100 minuti",
+        "year": "1974",
+        "direction": "Umberto Lenzi",
+        "genre": [
+            "noir",
+            "poliziesco",
+            "thriller"
+        ],
+        "poster": "https:\/\/bmoviezone.files.wordpress.com\/2011\/01\/milanoodia-lapolizia-nonpuo-sparare.jpg"
+    },
+    {
+        "title": "Macabro",
+        "duration": "89 minuti",
+        "year": "1980",
+        "direction": "Lamberto Bava",
+        "genre": [
+            "horror"
+        ],
+        "poster": "https:\/\/bmoviezone.files.wordpress.com\/2011\/02\/macabro.jpg"
+    }
+]

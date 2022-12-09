@@ -1,14 +1,9 @@
 <?php
   require_once './Models/Movie.php';
-  $non_si_sevizia_un_paperino = new Movie("Non Si Sevizia Un Paperino", "102 minuti", "1972", "Lucio Fulci",["giallo","thriller"]);
-  $milano_odia = new Movie("Milano Odia: La Polizia Non Può Sparare","100 minuti","1974","Umberto Lenzi",["noir", "poliziesco", "thriller"]);
-  $macabro = new Movie("Macabro","89 minuti","1980","Lamberto Bava",["horror"]);
-
-  $non_si_sevizia_un_paperino->takePoster("https://bmoviezone.files.wordpress.com/2011/01/nonsiseviziaunpaperino.jpg");
-  $milano_odia->takePoster("https://bmoviezone.files.wordpress.com/2011/01/milanoodia-lapolizia-nonpuo-sparare.jpg");
-  $macabro->takePoster("https://bmoviezone.files.wordpress.com/2011/02/macabro.jpg");
-
-  $movieList = [$non_si_sevizia_un_paperino, $milano_odia, $macabro]
+  require_once './server.php';
+  
+  var_dump($non_si_sevizia_un_paperino);
+  var_dump($movieList);
 ?>
 
 <!DOCTYPE html>
@@ -26,17 +21,17 @@
     <h1>B-Movie collection</h1>
 
     <div class="wrapper">
-      <?php foreach($movieList as $movie): ?>
+      <?php foreach($json_movie_db as $movie): ?>
       <div class="card">
-        <img src="<?php echo $movie->poster ?>" alt="<?php echo $movie->title ?>">
+        <img src="<?php echo $movie["poster"] ?>" alt="<?php echo $movie["title"] ?>">
         <ul>
-          <li>Titolo: <?php echo $movie->title ?></li>
-          <li>Durata: <?php echo $movie->duration ?></li>
-          <li>Anno: <?php echo $movie->year ?></li>
-          <li>Regia: <?php echo $movie->direction ?></li>
+          <li>Titolo: <?php echo $movie["title"] ?></li>
+          <li>Durata: <?php echo $movie["duration"] ?></li>
+          <li>Anno: <?php echo $movie["year"] ?></li>
+          <li>Regia: <?php echo $movie["direction"] ?></li>
           <li>Genere: 
             <ul>
-              <?php foreach($movie->genre as $genre): ?>
+              <?php foreach($movie["genre"] as $genre): ?>
               <li><?php echo $genre ?></li>
               <?php endforeach; ?>
             </ul>
