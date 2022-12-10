@@ -18,8 +18,51 @@ body{
   margin: 100px auto;
 }
 
-h1{
-  margin-bottom: 3rem;
+.btn{
+  border: 0;
+  background-color: cornflowerblue;
+  padding: 5px 10px;
+  cursor: pointer;
+
+}
+
+header{
+  padding: 1rem 2rem;
+  background-color: darkslategrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-modal{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-form-container{
+  background-color: white;
+  height: 80vh;
+  width: 50vw;
+  padding: 1rem 1rem;
+}
+
+.my-input-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.my-input{
+  width: 70%;
+  height: 2rem;
 }
 
 .wrapper{

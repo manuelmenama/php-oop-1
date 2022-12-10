@@ -4,6 +4,7 @@
   
   var_dump($non_si_sevizia_un_paperino);
   var_dump($movieList);
+  var_dump($_GET);
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +18,58 @@
 </head>
 <body>
 
-  <div class="container">
+  <header>
+
     <h1>B-Movie collection</h1>
+
+    <button type="button" class="btn">Add B-Movie</button>
+
+  </header>
+
+  <div class="container">
+
+    <div class="my-modal">
+      <button type="button" class="btn">X</button>
+      <form action="./index.php" method="GET">
+
+        <div class="my-form-container">
+  
+          <div class="my-input-container">
+            <label for="title">Titolo:</label>
+            <input type="text" class="my-input" id="title" name="title">
+          </div>
+          <div class="my-input-container">
+            <label for="duration">Durata:</label>
+            <input type="text" class="my-input" id="duration" name="duration">
+          </div>
+          <div class="my-input-container">
+            <label for="year">Anno:</label>
+            <input type="text" class="my-input" id="year" name="year">
+          </div>
+          <div class="my-input-container">
+            <label for="direction">Regia:</label>
+            <input type="text" class="my-input" id="direction" name="direction">
+          </div>
+          <div class="my-input-container">
+            <label for="poster">Locandina:</label>
+            <input type="text" class="my-input" id="poster" name="poster">
+          </div>
+          <div class="my-input-container">
+            <label for="genre1">Genere/i: #1</label>
+            <input type="text" class="my-input" id="genre1" name="genre[genre1]">
+          </div>
+          <div class="my-input-container">
+            <label for="genre2">#2</label>
+            <input type="text" class="my-input" id="genre2" name="genre[genre2]">
+          </div>
+          <div class="my-input-container">
+            <label for="genre3">#3</label>
+            <input type="text" class="my-input" id="genre3" name="genre[genre3]">
+          </div>
+          <button type="submit" class="btn">Aggiungi</button>
+        </div>
+      </form>
+    </div>
 
     <div class="wrapper">
       <?php foreach($json_movie_db as $movie): ?>

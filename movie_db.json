@@ -31,5 +31,17 @@
             "horror"
         ],
         "poster": "https:\/\/bmoviezone.files.wordpress.com\/2011\/02\/macabro.jpg"
+    },
+    {
+        "title": "Quella Villa Accanto al Cimitero",
+        "duration": "87 minuti",
+        "year": "1981",
+        "direction": "Lucio Fulci",
+        "genre": {
+            "genre1": "horror",
+            "genre2": "",
+            "genre3": ""
+        },
+        "poster": "https:\/\/bmoviezone.files.wordpress.com\/2011\/02\/quella-villa-accanto-al-cimitero.jpg"
     }
 ]
