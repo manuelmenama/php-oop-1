@@ -22,17 +22,17 @@
 
     <h1>B-Movie collection</h1>
 
-    <button type="button" class="btn">Add B-Movie</button>
+    <button type="button" class="btn" id="add-bmovie">Add B-Movie</button>
 
   </header>
 
   <div class="container">
 
-    <div class="my-modal">
-      <button type="button" class="btn">X</button>
+    <div class="my-modal" id="modal">
       <form action="./index.php" method="GET">
-
+        
         <div class="my-form-container">
+          <button type="button" class="btn">X</button>
   
           <div class="my-input-container">
             <label for="title">Titolo:</label>
@@ -95,5 +95,6 @@
 
   </div>
 
+  <script src="./js/script.js"></script>
 </body>
 </html>
